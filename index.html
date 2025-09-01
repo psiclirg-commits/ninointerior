@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Semana de Sanación del Niño Interior · APSICSXXI</title>
+<style>
+  :root{
+    --bg1:#0e102c; --bg2:#171a3e;
+    --glass: rgba(255,255,255,.06);
+    --glass-border: rgba(255,255,255,.18);
+    --ink:#eef0ff; --muted:#b8bedc;
+    --g1:#10d7c4; --g2:#d84bff; --g3:#6c8cff; --g4:#a74bff;
+    --accent:#ffd2ff; --ok:#2bd4a7;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; color:var(--ink); font-family: Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Arial;
+    background:
+      radial-gradient(1200px 520px at 12% -10%, #2a2a63 0%, transparent 60%),
+      radial-gradient(1000px 540px at 88% -8%, #4b1c67 0%, transparent 60%),
+      linear-gradient(180deg,var(--bg1),var(--bg2));
+    line-height:1.65;
+  }
+  .shell{max-width:940px;margin:0 auto;padding:26px 16px 90px;position:relative}
+  /* Marca de agua */
+  .wm{
+    position:fixed; inset:0; pointer-events:none; user-select:none; z-index:0;
+    display:flex; align-items:center; justify-content:center;
+    transform:rotate(-24deg);
+    opacity:.05; color:#fff; font-weight:900; font-size:10vw; letter-spacing:.2em;
+  }
+  /* Encabezado */
+  .brand{
+    display:flex; flex-direction:column; gap:4px;
+    background: rgba(10,10,30,.55); border:1px solid var(--glass-border);
+    padding:16px 18px; border-radius:16px; box-shadow:0 12px 28px rgba(0,0,0,.35);
+    backdrop-filter: blur(10px); margin-bottom:18px;
+  }
+  .brand b{letter-spacing:.35px; font-size:14px; color:#e7e9ff}
+  .brand small{color:var(--muted)}
+  .brand .bar{height:6px;width:100%; border-radius:6px; background:linear-gradient(90deg,var(--g1),var(--g2)); margin-top:6px}
+  h1{font-size:clamp(28px,5vw,46px); margin:8px 0 2px}
+  .lead{color:var(--muted); font-size:clamp(14px,2.2vw,18px); margin:0 0 14px}
+  /* Cards */
+  .card{
+    position:relative; z-index:1;
+    background:var(--glass); border:1px solid var(--glass-border); border-radius:18px;
+    padding:18px 20px; box-shadow:0 22px 60px rgba(0,0,0,.35); margin:16px 0;
+    backdrop-filter: blur(12px);
+  }
+  .card h3{margin:.2rem 0 .6rem}
+  .quote{font-style:italic; color:var(--accent)}
+  /* Toolbar */
+  .toolbar{display:flex; flex-wrap:wrap; gap:12px; margin:18px 0}
+  .btn{
+    border:none; color:#0c0f27; font-weight:700; padding:12px 16px; border-radius:14px; cursor:pointer;
+    background:linear-gradient(90deg,var(--g1),var(--g2)); box-shadow:0 10px 30px rgba(216,75,255,.25);
+  }
+  .btn.ghost{background:#262a63; color:#e8eaff; border:1px solid #46467a}
+  .btn:active{transform:translateY(1px)}
+  /* Accordion tipo app */
+  details.day{
+    border-radius:18px; overflow:hidden; margin:16px 0; border:1px solid var(--glass-border);
+    background:rgba(255,255,255,.04)
+  }
+  details.day > summary{
+    list-style:none; cursor:pointer; padding:16px 18px; font-weight:800; font-size:18px;
+    background: linear-gradient(90deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+    display:flex; align-items:center; gap:10px;
+  }
+  details.day > summary::-webkit-details-marker{display:none}
+  .chev{margin-left:auto; transition:transform .2s ease}
+  details[open] .chev{transform:rotate(90deg)}
+  .day-content{padding:14px 18px}
+  .q{margin:8px 0 0; padding-left:18px}
+  .q li{margin:6px 0}
+  textarea{
+    width:100%; min-height:130px; border-radius:12px; border:1px solid #4b4b86; background:#16183a; color:#e9e9ff;
+    padding:12px; font-family:inherit; box-shadow: inset 0 0 0 1px rgba(255,255,255,.03);
+  }
+  input[type="file"]{display:none}
+  #photoChildPreview img{
+    max-width:240px; border-radius:14px; box-shadow:0 12px 26px rgba(0,0,0,.45); margin-top:8px
+  }
+  footer{color:#a9a9d2; text-align:center; margin-top:28px}
+  /* Small helpers */
+  .pill{display:inline-block;padding:4px 10px;border-radius:999px;border:1px solid #556; background:#1c1f4e; color:#cfd3ff; font-size:12px; font-weight:700}
+</style>
+</head>
+<body>
+  <div class="wm">APSICSXXI</div>
+  <div class="shell">
+    <!-- Encabezado -->
+    <div class="brand">
+      <b>Atención Psicológica Siglo XXI · Lesly Romero</b>
+      <small>Semana de Sanación del Niño Interior</small>
+      <div class="bar"></div>
+    </div>
+
+    <h1>Un viaje de reconexión y amor propio</h1>
+    <p class="lead">Escribe cada ejercicio aquí o en tu cuaderno de terapia. No hay respuestas correctas: solo honestidad y compasión hacia ti mism@.</p>
+
+    <!-- Cuento completo -->
+    <div class="card">
+      <h3>📖 Cuento Reflexivo: “El Jardín Olvidado”</h3>
+      <p>Había una vez una mujer que heredó una casa antigua de su abuela. Al explorar el sótano, encontró una puerta pequeña, casi del tamaño de un niño, que llevaba a un jardín secreto.</p>
+      <p>Al entrar, se sorprendió al encontrar a una niña pequeña sentada junto a un estanque seco, rodeada de flores marchitas. La niña la miró con ojos tristes y le dijo:</p>
+      <p>—He estado esperándote mucho tiempo. Nadie viene a visitarme.</p>
+      <p>—¿Quién eres? —preguntó la mujer.</p>
+      <p>—Soy tú —respondió la niña—. Soy la parte de ti que dejaste aquí cuando decidiste ser "grande". He estado cuidando este jardín de recuerdos, pero sin tu amor, todo se ha marchitado.</p>
+      <p>La mujer se arrodilló junto a la niña y por primera vez en años, se permitió sentir su tristeza, su miedo, su necesidad de amor. Juntas comenzaron a regar las flores, y poco a poco, el jardín volvió a florecer.</p>
+      <p class="quote"><b>Reflexión:</b> Tu niño interior ha estado esperándote. Lleva contigo todos tus sueños, heridas y la capacidad infinita de amar. Es tiempo de regresar al jardín y cuidarlo juntos.</p>
+    </div>
+
+    <!-- Herramientas -->
+    <div class="toolbar">
+      <button class="btn ghost" id="clearAll">🧽 Limpiar notas</button>
+      <button class="btn" id="exportBtn">⬇️ Exportar notas</button>
+      <button class="btn ghost" onclick="window.print()">🖨️ Imprimir / PDF</button>
+    </div>
+
+    <!-- Día 1 -->
+    <details class="day" open id="dia1">
+      <summary>🌟 Día 1 · Reconocimiento — “Hola, pequeño/a” <span class="chev">▶</span></summary>
+      <div class="day-content">
+        <div class="card"><b>🌬️ Ritual:</b> Busca un espacio tranquilo. Respira profundo tres veces; abre espacio al inhalar y suelta peso al exhalar.</div>
+        <div class="card"><b>🌿 Visualización:</b> Cruza la puerta del Jardín Olvidado. Allí te espera tu niñ@. Obsérval@ con calma.</div>
+        <div class="card"><b>📝 Preguntas:</b>
+          <ul class="q">
+            <li>¿Qué edad tiene tu niñ@ ahora?</li>
+            <li>¿Qué emoción refleja su mirada?</li>
+            <li>¿Qué siente su cuerpo?</li>
+            <li>¿Qué quiere que sepas de él/ella?</li>
+            <li>¿Qué palabra necesita escuchar de ti ahora mismo?</li>
+          </ul>
+        </div>
+        <div class="card">
+          <b>📸 Agrega tu foto de niñ@</b><br>
+          <label for="photoChild" class="btn">Seleccionar foto</label>
+          <input type="file" id="photoChild" accept="image/*">
+          <div id="photoChildPreview"></div>
+          <p><em>Escribe debajo de tu foto:</em> <strong>“Te veo. Te reconozco. Eres importante.”</strong></p>
+        </div>
+        <textarea id="note1" placeholder="Reflexión Día 1…"></textarea>
+        <div class="card"><b>🌈 Cierre:</b> <em>“Hoy abro el jardín de mi interior. Te abrazo y prometo que ya no estarás sol@.”</em></div>
+      </div>
+    </details>
+
+    <!-- Día 2 -->
+    <details class="day" id="dia2">
+      <summary>💌 Día 2 · Escucha Profunda — “Cuéntame tu historia” <span class="chev">▶</span></summary>
+      <div class="day-content">
+        <div class="card"><b>🌬️ Ritual:</b> Cierra los ojos y di: <em>“Estoy list@ para escucharte.”</em></div>
+        <div class="card"><b>✍️ Ejercicio:</b> Pregunta a tu niñ@: <em>“¿Qué quieres contarme?”</em> Escribe sin censura lo que llegue.</div>
+        <div class="card"><b>📝 Preguntas:</b>
+          <ul class="q">
+            <li>¿Qué recuerdos, imágenes o sensaciones surgieron?</li>
+            <li>¿Qué fue lo más fuerte que recibiste hoy?</li>
+            <li>¿Qué necesitaba esa versión de ti en ese momento?</li>
+          </ul>
+        </div>
+        <textarea id="note2" placeholder="Reflexión Día 2…"></textarea>
+        <div class="card"><b>🌈 Cierre:</b> Abraza un cojín y di: <em>“Hoy escuché tu voz. Ya no estás en silencio.”</em></div>
+      </div>
+    </details>
+
+    <!-- Día 3 -->
+    <details class="day" id="dia3">
+      <summary>🌱 Día 3 · Validación — “Tus sentimientos son válidos” <span class="chev">▶</span></summary>
+      <div class="day-content">
+        <div class="card"><b>🌬️ Ritual:</b> Coloca un cojín o peluche en tu regazo como representación de tu niñ@.</div>
+        <div class="card"><b>🧩 Ejercicio:</b> Identifica 3 heridas. Valida: <em>“Es comprensible que te sintieras ___ cuando ___.”</em></div>
+        <div class="card"><b>📝 Preguntas:</b>
+          <ul class="q">
+            <li>¿Cuáles son las 3 heridas principales que recuerdas?</li>
+            <li>¿Qué emociones acompañaron esas experiencias?</li>
+            <li>¿Qué te hubiera gustado escuchar entonces?</li>
+            <li>¿Cómo se siente decirlo ahora en voz alta?</li>
+          </ul>
+        </div>
+        <textarea id="note3" placeholder="Reflexión Día 3…"></textarea>
+        <div class="card"><b>🌈 Cierre:</b> Mírate al espejo y di: <em>“Tus sentimientos importan. Siempre serán bienvenidos.”</em></div>
+      </div>
+    </details>
+
+    <!-- Día 4 -->
+    <details class="day" id="dia4">
+      <summary>🌈 Día 4 · Cuidado Amoroso — “Te cuido como merecías” <span class="chev">▶</span></summary>
+      <div class="day-content">
+        <div class="card"><b>🌬️ Ritual:</b> Pregunta: <em>“¿Cómo quieres que te cuide hoy?”</em></div>
+        <div class="card"><b>💖 Ejercicio:</b> Hazle caso (descanso, juego, comida rica, mimos, límite sano).</div>
+        <div class="card"><b>📝 Preguntas:</b>
+          <ul class="q">
+            <li>¿Qué pidió tu niñ@ hoy?</li>
+            <li>¿Cómo te sentiste al cumplirlo?</li>
+            <li>¿Qué frases amorosas le dijiste durante el día?</li>
+            <li>¿Qué decisión tomaste pensando en él/ella?</li>
+          </ul>
+        </div>
+        <textarea id="note4" placeholder="Reflexión Día 4…"></textarea>
+        <div class="card"><b>🌈 Cierre:</b> <em>“Hoy te cuidé con amor; mereces ternura y protección.”</em></div>
+      </div>
+    </details>
+
+    <!-- Día 5 -->
+    <details class="day" id="dia5">
+      <summary>🕊️ Día 5 · Perdón — “No fue tu culpa” <span class="chev">▶</span></summary>
+      <div class="day-content">
+        <div class="card"><b>🌬️ Ritual:</b> Enciende una vela (o mira una luz) como símbolo de claridad.</div>
+        <div class="card"><b>🔓 Ejercicio:</b> Lista culpas y responde: <em>“No fue tu culpa que ____. Eras un niñ@ haciendo lo mejor que podías.”</em> Rompe/quema el papel como liberación.</div>
+        <div class="card"><b>📝 Preguntas:</b>
+          <ul class="q">
+            <li>¿De qué te culpaste injustamente?</li>
+            <li>¿Qué cargas llevaste que no eran tuyas?</li>
+            <li>¿Cómo se siente soltar ese peso?</li>
+            <li>¿Qué espacio abre en tu vida esta liberación?</li>
+          </ul>
+        </div>
+        <textarea id="note5" placeholder="Reflexión Día 5…"></textarea>
+        <div class="card"><b>🌈 Cierre:</b> <em>“Hoy libero lo que no era mío. Camino más liger@.”</em></div>
+      </div>
+    </details>
+
+    <!-- Día 6 -->
+    <details class="day" id="dia6">
+      <summary>🎉 Día 6 · Celebración — “Reconozco tu valor” <span class="chev">▶</span></summary>
+      <div class="day-content">
+        <div class="card"><b>🌬️ Ritual:</b> Pon una canción que amabas de niñ@ y muévete libremente.</div>
+        <div class="card"><b>🎁 Ejercicio:</b> Lista tus cualidades infantiles (creatividad, ternura, valentía…). Haz algo para celebrarlas hoy.</div>
+        <div class="card"><b>📝 Preguntas:</b>
+          <ul class="q">
+            <li>¿Qué cualidades redescubriste?</li>
+            <li>¿Cómo las mantendrás vivas?</li>
+            <li>¿Qué actividad alegre hiciste para celebrarte?</li>
+            <li>¿Qué emoción surgió al reconocerte?</li>
+          </ul>
+        </div>
+        <textarea id="note6" placeholder="Reflexión Día 6…"></textarea>
+        <div class="card"><b>🌈 Cierre:</b> Sonríete y di: <em>“Estoy orgullos@ de ti. Reconozco tu valor.”</em></div>
+      </div>
+    </details>
+
+    <!-- Día 7 -->
+    <details class="day" id="dia7">
+      <summary>🌟 Día 7 · Compromiso — “Promesas de amor” <span class="chev">▶</span></summary>
+      <div class="day-content">
+        <div class="card"><b>🌬️ Ritual:</b> Coloca frente a ti tu foto de niñ@ y una actual (si quieres), respira y míralas alternadamente.</div>
+        <div class="card">
+          <b>📜 Carta de Amor a Mi Niño Interior</b>
+          <p>Querid@ [tu nombre de pequeñ@]: Hoy, después de esta semana de reconexión, quiero decirte lo que siempre necesitaste escuchar:</p>
+          <ul class="q">
+            <li>Te amo exactamente como eres…</li>
+            <li>No estás sol@. Yo, tu versión adulta, estoy aquí contigo…</li>
+            <li>Eres suficiente. Siempre lo fuiste…</li>
+            <li>Te protegeré…</li>
+            <li>Honraré tus sueños…</li>
+          </ul>
+          <p><strong>Mi Compromiso Sagrado</strong></p>
+          <ul class="q">
+            <li>Escucharte diariamente…</li>
+            <li>Validar tus emociones…</li>
+            <li>Jugar contigo…</li>
+            <li>Protegerte…</li>
+            <li>Celebrarte…</li>
+            <li>Ser paciente…</li>
+            <li>Amarte incondicionalmente…</li>
+          </ul>
+          <p><strong>Fecha:</strong> ________ &nbsp; <strong>Firma:</strong> ____________________</p>
+          <p class="quote">“El niño que fuiste merece al adulto que te has convertido, y el adulto que eres necesita al niño que fuiste. Juntos, son completos.”</p>
+        </div>
+        <textarea id="note7" placeholder="Carta y compromisos…"></textarea>
+      </div>
+    </details>
+
+    <!-- Práctica continua (simple y cálida) -->
+    <div class="card">
+      <h3>🔄 Práctica continua</h3>
+      <p>Este viaje no termina en 7 días. Elige un momento fijo a la semana para revisar cómo está tu niñ@ interior.  
+      Regálale silencio cuando esté cansad@, juego cuando lo pida y celebración cuando lo merezca.  
+      No es tarea: es un <strong>ritual de amor propio</strong> que te acompaña.</p>
+    </div>
+
+    <footer>
+      <strong>APSICSXXI · Proceso terapéutico</strong><br>
+      <small>Las notas y tu foto se guardan solo en tu dispositivo.</small>
+    </footer>
+  </div>
+
+<script>
+  const $=s=>document.querySelector(s);
+  const $$=s=>document.querySelectorAll(s);
+
+  // Notas persistentes
+  for(let i=1;i<=7;i++){
+    const el=$(`#note${i}`); if(!el) continue;
+    const key=`sni:note:${i}`;
+    if(localStorage.getItem(key)) el.value=localStorage.getItem(key);
+    el.addEventListener('input',()=> localStorage.setItem(key, el.value));
+  }
+
+  // Exportar notas
+  $('#exportBtn').onclick=()=>{
+    const titles=['Día 1 · Reconocimiento','Día 2 · Escucha','Día 3 · Validación','Día 4 · Cuidado Amoroso','Día 5 · Perdón','Día 6 · Celebración','Día 7 · Compromiso'];
+    let out="";
+    for(let i=1;i<=7;i++){ out+=`==== ${titles[i-1]} ====\n${localStorage.getItem(`sni:note:${i}`)||''}\n\n`; }
+    const blob=new Blob([out],{type:"text/plain;charset=utf-8"}),a=document.createElement("a");
+    a.href=URL.createObjectURL(blob); a.download="notas_semana_nino_interior.txt"; a.click(); URL.revokeObjectURL(a.href);
+  };
+
+  // Limpiar todo
+  $('#clearAll').onclick=()=>{
+    if(confirm('¿Borrar todas tus notas y la foto guardada en este dispositivo?')){
+      for(let i=1;i<=7;i++){ localStorage.removeItem(`sni:note:${i}`); const el=$(`#note${i}`); if(el) el.value=''; }
+      localStorage.removeItem('sni:photoChild'); $('#photoChildPreview').innerHTML='';
+      alert('Listo. Todo limpio ✨');
+    }
+  };
+
+  // Foto de niñ@
+  const photoInput=$('#photoChild'), photoPreview=$('#photoChildPreview');
+  if(localStorage.getItem('sni:photoChild')) photoPreview.innerHTML=`<img src="${localStorage.getItem('sni:photoChild')}" alt="Foto de niñ@">`;
+  photoInput?.addEventListener('change',()=>{
+    const f=photoInput.files[0]; if(!f) return;
+    const r=new FileReader();
+    r.onload=e=>{
+      const data=e.target.result;
+      localStorage.setItem('sni:photoChild',data);
+      photoPreview.innerHTML=`<img src="${data}" alt="Foto de niñ@">`;
+    };
+    r.readAsDataURL(f);
+  });
+</script>
+</body>
+</html>
